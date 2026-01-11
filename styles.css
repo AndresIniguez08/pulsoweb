@@ -36,7 +36,11 @@ body {
     linear-gradient(180deg, var(--bg2), var(--bg));
   color: var(--text);
 }
-
+.logo {
+  width: 140px;
+  height: auto;
+  border-radius: 100%;
+}
 .container {
   max-width: 1120px;
   margin: 0 auto;
