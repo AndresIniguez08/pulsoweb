@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Animate sections on scroll
   const targets = document.querySelectorAll(
-    ".section-header, .service-card, .process-step, .about-left, .about-right, .cta-content",
+    ".section-header, .service-card, .process-step, .about-left, .about-right, .cta-content, .section section--alt",
   );
   targets.forEach((el) => el.classList.add("io-reveal"));
 
