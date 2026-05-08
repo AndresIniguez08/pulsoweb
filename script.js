@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   // Mobile nav burger (simple toggle for demo)
- // const burger = document.querySelector(".nav-burger");
-  //const nav = document.querySelector(".nav");
-  //if (burger) {
-   // burger.addEventListener("click", () => {
-     // nav.classList.toggle("nav--open");
-   // });
-  //}
+ const burger = document.querySelector(".nav-burger");
+  const nav = document.querySelector(".nav");
+  if (burger) {
+    burger.addEventListener("click", () => {
+      nav.classList.toggle("nav--open");
+    });
+  }
 });
