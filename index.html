@@ -95,18 +95,13 @@
                   />
                 </svg>
               </a>
-              <a
-  class="btn-ghost"
-  href="https://demo-inmobiliarias.pulsowebstudio.com.ar/"
-  target="_blank"
-  rel="noopener"
->
+<button class="btn-ghost" onclick="document.getElementById('demo-modal').style.display='flex'">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
     <rect x="2" y="3" width="20" height="14" rx="2"/>
     <path d="M8 21h8M12 17v4"/>
   </svg>
-  Ver demo
-</a>
+  Ver demos
+</button>
               <a
                 class="btn-ghost"
                 target="_blank"
@@ -592,7 +587,53 @@ Revisamos tu sitio sin costo y te decimos exactamente qué cambiar primero.
         </div>
       </section>
     </main>
+<!-- Modal demos -->
+<div id="demo-modal" style="display:none; position:fixed; inset:0; z-index:200; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#0d1120; border:1px solid rgba(255,255,255,0.14); border-radius:20px; padding:36px; max-width:520px; width:100%;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+      <h3 style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:22px; text-transform:uppercase; letter-spacing:-0.01em;">Nuestras demos</h3>
+      <button onclick="document.getElementById('demo-modal').style.display='none'" style="background:none; border:none; color:#8a909e; cursor:pointer; font-size:20px; line-height:1;">✕</button>
+    </div>
 
+    <div style="display:flex; flex-direction:column; gap:12px;">
+
+      <a href="https://demo-inmobiliarias.pulsowebstudio.com.ar/" target="_blank" rel="noopener"
+        style="display:flex; align-items:center; gap:16px; padding:16px; border:1px solid rgba(255,255,255,0.14); border-radius:12px; background:rgba(255,255,255,0.04); transition:border-color 0.2s;"
+        onmouseover="this.style.borderColor='rgba(37,99,235,0.5)'"
+        onmouseout="this.style.borderColor='rgba(255,255,255,0.14)'">
+        <div style="width:72px; height:52px; border-radius:8px; overflow:hidden; flex-shrink:0;">
+  <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&q=70" style="width:100%; height:100%; object-fit:cover;" alt="Demo Inmobiliaria"/>
+</div>
+        <div>
+          <p style="font-weight:700; font-size:15px; margin-bottom:3px;">Horizonte · Inmobiliaria</p>
+          <p style="font-size:13px; color:#8a909e;">Listado de propiedades, filtros y contacto por WhatsApp</p>
+        </div>
+        <svg style="margin-left:auto; flex-shrink:0; color:#636876;" width="16" height="16" viewBox="0 0 14 14" fill="none">
+          <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <a href="https://horizonte-super.pulsowebstudio.com.ar/" target="_blank" rel="noopener"
+        style="display:flex; align-items:center; gap:16px; padding:16px; border:1px solid rgba(255,255,255,0.14); border-radius:12px; background:rgba(255,255,255,0.04); transition:border-color 0.2s;"
+        onmouseover="this.style.borderColor='rgba(37,99,235,0.5)'"
+        onmouseout="this.style.borderColor='rgba(255,255,255,0.14)'">
+       <div style="width:72px; height:52px; border-radius:8px; overflow:hidden; flex-shrink:0;">
+  <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=200&q=70" style="width:100%; height:100%; object-fit:cover;" alt="Demo Supermercado"/>
+</div>
+        <div>
+          <p style="font-weight:700; font-size:15px; margin-bottom:3px;">Horizonte · Supermercado</p>
+          <p style="font-size:13px; color:#8a909e;">Ecommerce completo con carrito, checkout y panel admin</p>
+        </div>
+        <svg style="margin-left:auto; flex-shrink:0; color:#636876;" width="16" height="16" viewBox="0 0 14 14" fill="none">
+          <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </div>
+
+    <p style="font-size:12px; color:#636876; text-align:center; margin-top:20px; font-family:'JetBrains Mono',monospace;">Todas las demos son funcionales y navegables</p>
+  </div>
+</div>
     <footer class="footer">
       <div class="section-container footer-inner">
         <div class="footer-logo">
